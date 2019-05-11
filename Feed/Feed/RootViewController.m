@@ -34,6 +34,7 @@
     UINavigationController *logInNavigationController = [[UINavigationController alloc] initWithRootViewController:logInViewController];
     logInNavigationController.tabBarItem.title = @"登录";
     logInNavigationController.tabBarItem.image = [UIImage imageNamed:@"用户"];
+    //为viewControllers添加引用
     self.viewControllers = @[homeNavigationController, videoNavigationController, logInNavigationController];
     // 状态栏(statusbar)
 
