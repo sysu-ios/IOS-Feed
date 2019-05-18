@@ -10,23 +10,45 @@
 #define UserModel_h
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+NS_ASSUME_NONNULL_BEGIN
 
 @interface UserModel : NSObject
 
-@property (copy,nonatomic)NSString *iconPath; //头像路径
-@property (copy,nonatomic)NSString *name; //用户名
-@property (copy,nonatomic)NSString *password; //密码
+// 用户名 唯一标识id
+@property (nonatomic, strong) NSString *UserName;
+// 密码
+@property (nonatomic, strong) NSString *Password;
+// 头像
+@property (nonatomic, strong) UIImage *UserIcon;
+// 手机号
+@property (nonatomic, strong) NSString *PhoneNumber;
+// 邮箱
+@property (nonatomic, strong) NSString *Email;
+// 介绍
+@property (nonatomic, strong) NSString *Introduction;
+// 性别
+@property (nonatomic, strong) NSString *Sex;
+// 生日
+@property (nonatomic, strong) NSString *Birthday;
+// 居住地
+@property (nonatomic, strong) NSString *Region;
 
-@property (assign,nonatomic)NSInteger age; //年龄
-@property (assign,nonatomic)char gender; //性别
-@property (copy,nonatomic)NSString *place; //地区
+//发帖数
+@property (assign,nonatomic)NSInteger PostNum;
+//点赞数
+@property (assign,nonatomic)NSInteger PraiseNum;
+//关注数
+@property (assign,nonatomic)NSInteger AttentionNum;
+//粉丝数
+@property (assign,nonatomic)NSInteger FanNum;
 
-@property (assign,nonatomic)NSInteger postNum; //发帖数
-@property (assign,nonatomic)NSInteger praiseNum; //点赞数
-@property (assign,nonatomic)NSInteger attentionNum; //关注数
-@property (assign,nonatomic)NSInteger fanNum; //粉丝数
-
+-(instancetype)init;
++(instancetype)init;
 
 @end
 
+NS_ASSUME_NONNULL_END
+
 #endif /* UserModel_h */
+

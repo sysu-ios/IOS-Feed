@@ -16,7 +16,7 @@
 
 打开后缀名为.xcworkspace文件
 
-添加第三方库时，修改Podfile文件，然后再执行`pod install
+添加第三方库时，修改Podfile文件，然后再执行`pod install`
 
 ### FMDB数据库
 

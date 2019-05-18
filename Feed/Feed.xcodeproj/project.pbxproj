@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2183B0742286EA58001296FF /* UserDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 2183B0732286EA58001296FF /* UserDao.m */; };
 		3EBD78A9C604C4DC72CAB799 /* libPods-Feed.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA20A8FB7493698E4CF60465 /* libPods-Feed.a */; };
+		56FF1629228FAA3D003CFC81 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 56FF1628228FAA3D003CFC81 /* UserModel.m */; };
 		76B23E3EA73BEB2BB3765F1D /* libPods-FeedUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD585F943A44E23073AAD2A9 /* libPods-FeedUITests.a */; };
 		A004311E22805833008D0579 /* 用户.png in Resources */ = {isa = PBXBuildFile; fileRef = A004311B22805833008D0579 /* 用户.png */; };
 		A004311F22805833008D0579 /* 视频.png in Resources */ = {isa = PBXBuildFile; fileRef = A004311C22805833008D0579 /* 视频.png */; };
@@ -60,6 +61,7 @@
 		2183B0732286EA58001296FF /* UserDao.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserDao.m; sourceTree = "<group>"; };
 		34F15B5034816CF3ED7084D3 /* libPods-FeedTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FeedTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5246AE09672AB17337E5F674 /* Pods-Feed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Feed.debug.xcconfig"; path = "Target Support Files/Pods-Feed/Pods-Feed.debug.xcconfig"; sourceTree = "<group>"; };
+		56FF1628228FAA3D003CFC81 /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 		86E1938A848C911412347026 /* Pods-FeedUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedUITests.release.xcconfig"; path = "Target Support Files/Pods-FeedUITests/Pods-FeedUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A004311B22805833008D0579 /* 用户.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "用户.png"; sourceTree = "<group>"; };
 		A004311C22805833008D0579 /* 视频.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "视频.png"; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				212F43552286737300BF3CAF /* UserDao.h */,
 				2183B0732286EA58001296FF /* UserDao.m */,
 				212F43572286743100BF3CAF /* UserModel.h */,
+				56FF1628228FAA3D003CFC81 /* UserModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 				A0FA6EB0228094DC00C70080 /* TechViewController.m in Sources */,
 				A03387EB22804F4A0020858C /* main.m in Sources */,
 				A033880F22804F600020858C /* RootViewController.m in Sources */,
+				56FF1629228FAA3D003CFC81 /* UserModel.m in Sources */,
 				A033881D228056F40020858C /* LogInViewController.m in Sources */,
 				A0FA6EAD228094C600C70080 /* PEViewController.m in Sources */,
 				2183B0742286EA58001296FF /* UserDao.m in Sources */,

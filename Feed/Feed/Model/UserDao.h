@@ -26,10 +26,21 @@
 -(void)deleteUser:(UserModel *)model;
 //修改数据
 -(void)updateUser:(UserModel *)model;
+
 //查询
--(NSArray *)queryUser;
+-(NSMutableArray *)queryUser;
+//根据名字查询
+-(NSMutableArray *)findByUserName:(NSString *)name;
+//根据邮箱查询
+-(NSMutableArray *)findByEmail:(NSString *)email;
+//根据手机号查询
+-(NSMutableArray *)findByPhone:(NSString *)phone;
+//模糊查询
+-(NSMutableArray *)findByLike:(NSString *)input;
+
 //清空数据库
 -(void)removeAllUser;
 
+@end
 
 #endif /* UserDao_h */
