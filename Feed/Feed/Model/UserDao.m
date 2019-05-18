@@ -96,7 +96,7 @@ static UserDao *userFmdb = nil;
         NSInteger AttentionNum = model.AttentionNum;
         NSInteger FanNum = model.FanNum;
         
-        BOOL result = [self.db executeUpdate:@"INSERT INTO user (UserName, Password, UserIcon, PhoneNumber, Email, Introduction, Sex, Birthday, Region, PostNum, PraiseNum, AttentionNum, FanNum) value(?,?,?,?,?,?,?,?,?,?,?,?,?)",UserName, Password, UserIcon, PhoneNumber, Email, Introduction, Sex, Birthday, Region, PostNum, PraiseNum, AttentionNum, FanNum];
+        BOOL result = [self.db executeUpdate:@"INSERT INTO user (UserName, Password, UserIcon, PhoneNumber, Email, Introduction, Sex, Birthday, Region, PostNum, PraiseNum, AttentionNum, FanNum) value(?,?,?,?,?,?,?,?,?,?,?,?,?);",UserName, Password, UserIcon, PhoneNumber, Email, Introduction, Sex, Birthday, Region, PostNum, PraiseNum, AttentionNum, FanNum];
         if (result) {
             NSLog(@"插入表成功");
             
@@ -126,7 +126,7 @@ static UserDao *userFmdb = nil;
     if ([self.db open]) {
         
         // 查询数据
-        FMResultSet *rs = [self.db executeQuery:@"SELECT * FROM user"];
+        FMResultSet *rs = [self.db executeQuery:@"SELECT * FROM user;"];
         
         // 遍历结果集
         while ([rs next]) {
