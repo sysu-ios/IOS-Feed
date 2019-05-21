@@ -7,7 +7,6 @@
 //
 
 #import "RecommendViewController.h"
-
 @interface RecommendViewController ()
 
 @end
@@ -15,8 +14,7 @@
 @implementation RecommendViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
 
 /*

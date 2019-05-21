@@ -10,9 +10,13 @@
 #import "HomeViewController.h"
 #import "LogInViewController.h"
 #import "ReleaseViewController.h"
-
+#import "LogIn/MyInfoViewController.h"
 @interface RootViewController ()
-
+@property (nonatomic, strong) LogInViewController *logInViewController;
+@property (nonatomic, strong) MyInfoViewController *myInfoViewController;
+@property (nonatomic, strong) UINavigationController *myInfoNavigationController;
+@property (nonatomic, strong) UINavigationController *logInNavigationController;
+@property (nonatomic, strong) NSMutableArray *tabBarArray;
 @end
 
 @implementation RootViewController
@@ -30,24 +34,40 @@
     videoNavigationController.tabBarItem.title = @"发布";
     videoNavigationController.tabBarItem.image = [UIImage imageNamed:@"相机"];
     // 3. 设置登录标签
-    LogInViewController *logInViewController = [[LogInViewController alloc] init];
-    UINavigationController *logInNavigationController = [[UINavigationController alloc] initWithRootViewController:logInViewController];
-    logInNavigationController.tabBarItem.title = @"登录";
-    logInNavigationController.tabBarItem.image = [UIImage imageNamed:@"用户"];
-    //为viewControllers添加引用
-    self.viewControllers = @[homeNavigationController, videoNavigationController, logInNavigationController];
+    self.logInViewController = [[LogInViewController alloc] init];
+    self.logInNavigationController = [[UINavigationController alloc] initWithRootViewController:self.logInViewController];
+    self.logInNavigationController.tabBarItem.title = @"登录";
+    self.logInNavigationController.tabBarItem.image = [UIImage imageNamed:@"无用户"];
+    self.tabBarArray = [[NSMutableArray alloc] initWithArray:@[homeNavigationController, videoNavigationController, self.logInNavigationController]];
+    self.viewControllers = [NSArray arrayWithArray:self.tabBarArray];
     // 状态栏(statusbar)
-
+    // 添加观察者模式KVO
+    // 4.设置用户界面
+    self.myInfoViewController = [[MyInfoViewController alloc] init];
+    self.myInfoNavigationController = [[UINavigationController alloc] initWithRootViewController: self.myInfoViewController];
+    self.myInfoNavigationController.tabBarItem.title = @"已登录";
+    self.myInfoNavigationController.tabBarItem.image = [UIImage imageNamed:@"用户"];
+    [self.logInViewController addObserver:self forKeyPath:@"isOnLine" options:NSKeyValueObservingOptionOld | NSKeyValueObservingOptionNew context:nil];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
+{
+    BOOL newState = [change valueForKey:@"new"];
+    if (newState)
+    {
+        self.tabBarArray[2] = self.myInfoNavigationController;
+        self.viewControllers = [NSArray arrayWithArray:self.tabBarArray];
+    }
+    else
+    {
+        self.tabBarArray[2] = self.logInNavigationController;
+        self.viewControllers = [NSArray arrayWithArray:self.tabBarArray];
+    }
 }
-*/
+
+-(void)dealloc
+{
+    [self.logInViewController removeObserver:self forKeyPath:@"isOnLine"];
+}
 
 @end

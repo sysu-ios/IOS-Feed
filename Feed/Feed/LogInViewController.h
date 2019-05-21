@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LogInViewController : UIViewController <UITextFieldDelegate>
-
+- (instancetype)init;
 @end
 
 NS_ASSUME_NONNULL_END
