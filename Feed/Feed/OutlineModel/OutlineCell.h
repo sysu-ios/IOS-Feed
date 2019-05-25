@@ -12,7 +12,7 @@
 @interface OutlineCell : UITableViewCell
 
 @property (nonatomic,strong) UILabel *namelabel;
-@property (nonatomic,strong) UILabel *avatarlabel;
+@property (nonatomic,strong) UIImageView *avatarImage;
 @property (nonatomic,strong) UILabel *identitylabel;
 @property (nonatomic ,strong) UILabel *timelabel;
 @property (nonatomic,strong) UIImageView *picImage1;
@@ -20,7 +20,11 @@
 @property (nonatomic,strong) UIImageView *picImage3;
 @property (nonatomic,strong) UILabel *titleLabel;
 @property (nonatomic,strong) UILabel *commentLabel;
+@property (nonatomic,strong) UIImageView *commentImage;
 @property (nonatomic,strong) UILabel *likeLabel;
+@property (nonatomic,strong) UIImageView *likeImage;
+@property (nonatomic,strong) UILabel *transmitLabel;
+@property (nonatomic,strong) UIImageView *transmitImage;
 
 @property (nonatomic,strong) OutlineFrame *outlineframe;
 

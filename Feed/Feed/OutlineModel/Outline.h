@@ -21,6 +21,7 @@
 @property (nonatomic,copy) NSString *title; //标题
 @property (nonatomic,copy) NSString *comment; //评论数显示
 @property (nonatomic,copy) NSString *like; //点赞数显示
+@property (nonatomic,copy) NSString *share; //转发数显示
 
 -(id) initWithDict:(NSDictionary *)dict;
 +(id) outlineWithDict:(NSDictionary *)dict;

@@ -16,7 +16,7 @@
 @interface OutlineCell()
 {
     UILabel *_name;
-    UILabel *_avatar;
+    UIImageView *_avatar;
     UILabel *_identity;
     UILabel *_title;
     UIImageView *_pic1;
@@ -24,7 +24,11 @@
     UIImageView *_pic3;
     UILabel *_time;
     UILabel *_comment;
+    UIImageView *_commentImage;
     UILabel *_like;
+    UIImageView *_likeImage;
+    UILabel *_transmit;
+    UIImageView *_transmitImage;
 }
 
 @end
@@ -61,15 +65,20 @@
     Outline *outline = _outlineframe.outline;
     
     _name.text = outline.name;
-    _avatar.text = outline.avatar;
+    NSURL *url1 = [NSURL URLWithString:outline.imageList[0]];//url请求实在UI主线程中进行的
+    _avatar.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:url1]];//通过网络url获取UIImage
     _identity.text = outline.identity;
     
     _title.text = outline.title;
     _title.numberOfLines = 0;
     
-    _time.text = outline.time;
+    _time.text = [outline.time stringByAppendingString:@" · "];
     _comment.text = outline.comment;
+    _commentImage.image = [UIImage imageNamed:@"评论"];
     _like.text = outline.like;
+    _likeImage.image = [UIImage imageNamed:@"登录头像"];
+    _transmit.text = outline.share;
+    _transmitImage.image = [UIImage imageNamed:@"登录头像"];
     
     // 配图
     if (outline.imageList.count > 0) {
@@ -110,8 +119,12 @@
     
     //4.评论数，点赞数
     _comment.frame = _outlineframe.commentFrame;
+    _commentImage.frame = _outlineframe.commentPicFrame;
     _like.frame = _outlineframe.likeFrame;
-    
+    _likeImage.frame = _outlineframe.likePicFrame;
+    _transmit.frame = _outlineframe.transmitFrame;
+    _transmitImage.frame = _outlineframe.transmitPicFrame;
+ 
     //5.时间
     _time.frame = _outlineframe.timeFrame;
 }
@@ -135,26 +148,41 @@
     
     //3.作者
     _name = [[UILabel alloc] init];
-    _name.font = [UIFont systemFontOfSize:12];
+    _name.font = [UIFont systemFontOfSize:15];
     [self.contentView addSubview: _name];
-    _avatar = [[UILabel alloc] init];
-    _avatar.font = [UIFont systemFontOfSize:12];
+    _avatar = [[UIImageView alloc] init];
+    _avatar.layer.cornerRadius = 25.0f; //圆形头像
+    _avatar.layer.masksToBounds = YES;
     [self.contentView addSubview: _avatar];
     _identity = [[UILabel alloc] init];
     _identity.font = [UIFont systemFontOfSize:12];
+    _identity.textColor = [UIColor grayColor];
     [self.contentView addSubview: _identity];
     
     //4.评论数，点赞数
     _comment = [[UILabel alloc] init];
     _comment.font = [UIFont systemFontOfSize:12];
     [self.contentView addSubview:_comment];
+    _commentImage = [[UIImageView alloc] init];
+    [self.contentView addSubview:_commentImage];
+    
     _like = [[UILabel alloc] init];
     _like.font = [UIFont systemFontOfSize:12];
     [self.contentView addSubview:_like];
+    _likeImage = [[UIImageView alloc] init];
+    [self.contentView addSubview:_likeImage];
+    
+    _transmit = [[UILabel alloc] init];
+    _transmit.font = [UIFont systemFontOfSize:12];
+    [self.contentView addSubview:_transmit];
+    _transmitImage = [[UIImageView alloc] init];
+    [self.contentView addSubview:_transmitImage];
+    
     
     //5.时间
     _time = [[UILabel alloc] init];
     _time.font = [UIFont systemFontOfSize:12];
+    _time.textColor = [UIColor grayColor];
     [self.contentView addSubview:_time];
 }
 

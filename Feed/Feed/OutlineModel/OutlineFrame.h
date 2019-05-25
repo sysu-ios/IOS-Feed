@@ -23,8 +23,13 @@
 @property (nonatomic,assign,readonly) CGRect titleFrame;
 // 评论数的frame
 @property (nonatomic,assign,readonly) CGRect commentFrame;
+@property (nonatomic,assign,readonly) CGRect commentPicFrame;
 // 点赞数的frame
 @property (nonatomic,assign,readonly) CGRect likeFrame;
+@property (nonatomic,assign,readonly) CGRect likePicFrame;
+// 转发数的frame
+@property (nonatomic,assign,readonly) CGRect transmitFrame;
+@property (nonatomic,assign,readonly) CGRect transmitPicFrame;
 // 大图片的frame
 @property (nonatomic,assign,readonly) CGRect picFrame1;
 @property (nonatomic,assign,readonly) CGRect picFrame2;
@@ -34,6 +39,6 @@
 // cell数据内容模型
 @property (nonatomic,strong) Outline *outline;
 
--(id) initOutlineFrame:(Outline *)outline;
+-(id) initOutlineFrame:(Outline *)outline chooseStyle:(int)style;
 
 @end
