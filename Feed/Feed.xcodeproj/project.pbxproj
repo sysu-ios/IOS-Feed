@@ -28,7 +28,6 @@
 		A04AD99B228095F8007C03D7 /* EnterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A04AD99A228095F8007C03D7 /* EnterViewController.m */; };
 		A05F73DE22815F2700A91D0C /* FriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A05F73DD22815F2700A91D0C /* FriendViewController.m */; };
 		A05F73E022816D9400A91D0C /* 相机.png in Resources */ = {isa = PBXBuildFile; fileRef = A05F73DF22816D9400A91D0C /* 相机.png */; };
-		A073E63D22816E26003CA352 /* ReleaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A073E63C22816E26003CA352 /* ReleaseViewController.m */; };
 		A073E63F228174D6003CA352 /* 登录头像.png in Resources */ = {isa = PBXBuildFile; fileRef = A073E63E228174D6003CA352 /* 登录头像.png */; };
 		A073E64222818958003CA352 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A073E64122818958003CA352 /* SignUpViewController.m */; };
 		A088925822918603006A649C /* ForgetPassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A088925622918603006A649C /* ForgetPassWordViewController.m */; };
@@ -50,6 +49,16 @@
 		A0FA6EAA228094A100C70080 /* RecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FA6EA9228094A100C70080 /* RecommendViewController.m */; };
 		A0FA6EAD228094C600C70080 /* PEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FA6EAC228094C600C70080 /* PEViewController.m */; };
 		A0FA6EB0228094DC00C70080 /* TechViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FA6EAF228094DC00C70080 /* TechViewController.m */; };
+		A5C6217D2296CE710029CA6A /* MyTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C621772296CE710029CA6A /* MyTextView.m */; };
+		A5C6217E2296CE710029CA6A /* MyToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C6217A2296CE710029CA6A /* MyToolBar.m */; };
+		A5C6217F2296CE710029CA6A /* AddPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C6217B2296CE710029CA6A /* AddPhoto.m */; };
+		A5C621862296CF090029CA6A /* test.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A5C621812296CF090029CA6A /* test.jpeg */; };
+		A5C621872296CF090029CA6A /* keyboard.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A5C621822296CF090029CA6A /* keyboard.jpg */; };
+		A5C621882296CF090029CA6A /* cameraIcon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A5C621832296CF090029CA6A /* cameraIcon.jpeg */; };
+		A5C621892296CF090029CA6A /* topic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A5C621842296CF090029CA6A /* topic.jpg */; };
+		A5C6218A2296CF090029CA6A /* add.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A5C621852296CF090029CA6A /* add.jpeg */; };
+		A5C6218E2296DC590029CA6A /* ReleaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C6218C2296DC590029CA6A /* ReleaseViewController.m */; };
+		A5C621912296DCAD0029CA6A /* PublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C6218F2296DCAD0029CA6A /* PublishViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,8 +115,6 @@
 		A05F73DC22815F2700A91D0C /* FriendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendViewController.h; sourceTree = "<group>"; };
 		A05F73DD22815F2700A91D0C /* FriendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendViewController.m; sourceTree = "<group>"; };
 		A05F73DF22816D9400A91D0C /* 相机.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "相机.png"; sourceTree = "<group>"; };
-		A073E63B22816E26003CA352 /* ReleaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReleaseViewController.h; sourceTree = "<group>"; };
-		A073E63C22816E26003CA352 /* ReleaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReleaseViewController.m; sourceTree = "<group>"; };
 		A073E63E228174D6003CA352 /* 登录头像.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "登录头像.png"; sourceTree = "<group>"; };
 		A073E64022818958003CA352 /* SignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		A073E64122818958003CA352 /* SignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
@@ -143,6 +150,21 @@
 		A0FA6EAC228094C600C70080 /* PEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PEViewController.m; sourceTree = "<group>"; };
 		A0FA6EAE228094DC00C70080 /* TechViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TechViewController.h; sourceTree = "<group>"; };
 		A0FA6EAF228094DC00C70080 /* TechViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TechViewController.m; sourceTree = "<group>"; };
+		A5C621752296CE710029CA6A /* MyTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTextView.h; sourceTree = "<group>"; };
+		A5C621772296CE710029CA6A /* MyTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTextView.m; sourceTree = "<group>"; };
+		A5C621792296CE710029CA6A /* AddPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPhoto.h; sourceTree = "<group>"; };
+		A5C6217A2296CE710029CA6A /* MyToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyToolBar.m; sourceTree = "<group>"; };
+		A5C6217B2296CE710029CA6A /* AddPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPhoto.m; sourceTree = "<group>"; };
+		A5C621812296CF090029CA6A /* test.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpeg; sourceTree = "<group>"; };
+		A5C621822296CF090029CA6A /* keyboard.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = keyboard.jpg; sourceTree = "<group>"; };
+		A5C621832296CF090029CA6A /* cameraIcon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cameraIcon.jpeg; sourceTree = "<group>"; };
+		A5C621842296CF090029CA6A /* topic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = topic.jpg; sourceTree = "<group>"; };
+		A5C621852296CF090029CA6A /* add.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = add.jpeg; sourceTree = "<group>"; };
+		A5C6218B2296DAB50029CA6A /* MyToolBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyToolBar.h; sourceTree = "<group>"; };
+		A5C6218C2296DC590029CA6A /* ReleaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReleaseViewController.m; sourceTree = "<group>"; };
+		A5C6218D2296DC590029CA6A /* ReleaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReleaseViewController.h; sourceTree = "<group>"; };
+		A5C6218F2296DCAD0029CA6A /* PublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublishViewController.m; sourceTree = "<group>"; };
+		A5C621902296DCAD0029CA6A /* PublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublishViewController.h; sourceTree = "<group>"; };
 		AB0BF4D6C04074383B93EF2D /* libPods-Feed.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Feed.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0BB48D91C2CC2D6FD4999ED /* Pods-FeedTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedTests.debug.xcconfig"; path = "Target Support Files/Pods-FeedTests/Pods-FeedTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BBBA3065D523C090B8BC87EB /* Pods-FeedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeedTests.release.xcconfig"; path = "Target Support Files/Pods-FeedTests/Pods-FeedTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -248,6 +270,7 @@
 				21E3C52A22944BD900E762FC /* Model */,
 				A073E64322818969003CA352 /* LogIn */,
 				A0FA6EA02280782A00C70080 /* Home */,
+				A5C6216F2296C46B0029CA6A /* Post */,
 				A004311A22805833008D0579 /* resource */,
 				A03387DB22804F4A0020858C /* AppDelegate.h */,
 				A03387DC22804F4A0020858C /* AppDelegate.m */,
@@ -261,8 +284,8 @@
 				A0338819228055D70020858C /* HomeViewController.m */,
 				A033881B228056F40020858C /* LogInViewController.h */,
 				A033881C228056F40020858C /* LogInViewController.m */,
-				A073E63B22816E26003CA352 /* ReleaseViewController.h */,
-				A073E63C22816E26003CA352 /* ReleaseViewController.m */,
+				A5C6218D2296DC590029CA6A /* ReleaseViewController.h */,
+				A5C6218C2296DC590029CA6A /* ReleaseViewController.m */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -356,6 +379,34 @@
 				A04AD99A228095F8007C03D7 /* EnterViewController.m */,
 			);
 			path = Scroll;
+			sourceTree = "<group>";
+		};
+		A5C6216F2296C46B0029CA6A /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				A5C621802296CF090029CA6A /* Resource */,
+				A5C621792296CE710029CA6A /* AddPhoto.h */,
+				A5C6217B2296CE710029CA6A /* AddPhoto.m */,
+				A5C621752296CE710029CA6A /* MyTextView.h */,
+				A5C621772296CE710029CA6A /* MyTextView.m */,
+				A5C6217A2296CE710029CA6A /* MyToolBar.m */,
+				A5C6218B2296DAB50029CA6A /* MyToolBar.h */,
+				A5C621902296DCAD0029CA6A /* PublishViewController.h */,
+				A5C6218F2296DCAD0029CA6A /* PublishViewController.m */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		A5C621802296CF090029CA6A /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A5C621812296CF090029CA6A /* test.jpeg */,
+				A5C621822296CF090029CA6A /* keyboard.jpg */,
+				A5C621832296CF090029CA6A /* cameraIcon.jpeg */,
+				A5C621842296CF090029CA6A /* topic.jpg */,
+				A5C621852296CF090029CA6A /* add.jpeg */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		FE7B9E5761688E9A63C742A1 /* Frameworks */ = {
@@ -479,14 +530,19 @@
 				A0934E35228A9B45009F8F64 /* back.png in Resources */,
 				A0C2E1DB228EFEB60068AEE3 /* 无用户.png in Resources */,
 				A004311F22805833008D0579 /* 视频.png in Resources */,
+				A5C621882296CF090029CA6A /* cameraIcon.jpeg in Resources */,
 				A004311E22805833008D0579 /* 用户.png in Resources */,
 				A03387E822804F4A0020858C /* LaunchScreen.storyboard in Resources */,
+				A5C621862296CF090029CA6A /* test.jpeg in Resources */,
 				A0C7E7AB228C30F80036EE8E /* place.plist in Resources */,
 				A0934E39228AB1BC009F8F64 /* 头像.png in Resources */,
 				A0934E37228A9EE5009F8F64 /* logo.png in Resources */,
+				A5C621892296CF090029CA6A /* topic.jpg in Resources */,
 				A073E63F228174D6003CA352 /* 登录头像.png in Resources */,
 				A03387E522804F4A0020858C /* Assets.xcassets in Resources */,
+				A5C621872296CF090029CA6A /* keyboard.jpg in Resources */,
 				A05F73E022816D9400A91D0C /* 相机.png in Resources */,
+				A5C6218A2296CF090029CA6A /* add.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,20 +639,24 @@
 				21E3C52D22944C1400E762FC /* UserDao.m in Sources */,
 				A0C7E7B4228C81D50036EE8E /* inputViewController.m in Sources */,
 				A0FA6E9E2280780000C70080 /* ScrollViewController.m in Sources */,
+				A5C6217E2296CE710029CA6A /* MyToolBar.m in Sources */,
 				A0FA6EAA228094A100C70080 /* RecommendViewController.m in Sources */,
 				A0FA6EB0228094DC00C70080 /* TechViewController.m in Sources */,
 				A03387EB22804F4A0020858C /* main.m in Sources */,
+				A5C621912296DCAD0029CA6A /* PublishViewController.m in Sources */,
 				A0C2E1D6228EE9950068AEE3 /* ModifyPassWordViewController.m in Sources */,
 				21E3C52F22944C2E00E762FC /* UserModel.m in Sources */,
+				A5C6218E2296DC590029CA6A /* ReleaseViewController.m in Sources */,
+				A5C6217F2296CE710029CA6A /* AddPhoto.m in Sources */,
 				A033880F22804F600020858C /* RootViewController.m in Sources */,
 				A033881D228056F40020858C /* LogInViewController.m in Sources */,
 				A0C2E1D9228EF0690068AEE3 /* MyInfoViewController.m in Sources */,
 				A088925822918603006A649C /* ForgetPassWordViewController.m in Sources */,
 				A0FA6EAD228094C600C70080 /* PEViewController.m in Sources */,
 				A03387DD22804F4A0020858C /* AppDelegate.m in Sources */,
-				A073E63D22816E26003CA352 /* ReleaseViewController.m in Sources */,
 				A033881A228055D70020858C /* HomeViewController.m in Sources */,
 				A03AE038228BB0BF00D34188 /* InfoCell.m in Sources */,
+				A5C6217D2296CE710029CA6A /* MyTextView.m in Sources */,
 				A09890D12280959D0027ACCA /* MilitaryViewController.m in Sources */,
 				A0C7E7B1228C33D70036EE8E /* PlaceModel.m in Sources */,
 				A073E64222818958003CA352 /* SignUpViewController.m in Sources */,
